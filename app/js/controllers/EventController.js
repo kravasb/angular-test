@@ -3,6 +3,7 @@
 eventsApp.controller('EventController',
     function EventController($scope){
         $scope.snippet='<span style="color:red">Hi there</span>';
+        $scope.sortorder='name';
         $scope.boolValue=false;
         $scope.buttonDisabled = true;
         $scope.mystyle={color:'red'};
@@ -21,7 +22,7 @@ eventsApp.controller('EventController',
                 {
                     name: "Directives Masterclass",
                     creatorName: "Sasha Kravchuk",
-                    duration:"1 hour",
+                    duration: 1,
                     level: "Advanced",
                     abstract: "In this session you will learn about directives",
                     upVoteCount: 0
@@ -29,7 +30,7 @@ eventsApp.controller('EventController',
                 {
                     name: "Scopes for fun and profit",
                     creatorName: "Maxim Malik",
-                    duration:"2 hour",
+                    duration:2,
                     level: "Beginner",
                     abstract: "Scopes are made for fun and can bring you profit",
                     upVoteCount: 0
@@ -37,7 +38,7 @@ eventsApp.controller('EventController',
                 {
                     name: "Well behaved Controllers",
                     creatorName: "Vadim Gurzhiy",
-                    duration:"15 minutes",
+                    duration:4,
                     level: "Normal",
                     abstract: "Controllers are made to controll smth",
                     upVoteCount: 0
